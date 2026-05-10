@@ -112,7 +112,7 @@ function Index() {
             <Activity className="w-5 h-5 text-primary" />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-glow">PneumoScan</h1>
+            <h1 className="text-xl font-bold tracking-tight text-glow">Narimane DiagnosticPneumo</h1>
             <p className="text-xs text-muted-foreground">Medical Imaging</p>
           </div>
         </div>
@@ -244,7 +244,6 @@ function Index() {
         <div className="relative h-[500px] lg:h-[640px] glass rounded-3xl overflow-hidden glow">
           <Lung3D status={status} />
           <div className="absolute bottom-4 left-4 right-4 flex justify-between text-xs text-muted-foreground">
-            <span>Live 3D Pulmonary Model</span>
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full"
                     style={{ background: status === "pneumonia" ? "var(--danger)" : status === "normal" ? "var(--success)" : "var(--neon)" }} />
@@ -279,8 +278,9 @@ function Index() {
       )}
 
       <footer className="container mx-auto px-6 py-8 text-center text-xs text-muted-foreground border-t border-border/40">
-        PneumoScan · Outil d'aide au diagnostic — ne remplace pas un avis médical professionnel.
-      </footer>
+  <p><strong>Dr.Amsseli Narimane</strong>.Diagnostique Pneumonie</p>
+</footer>
+
     </main>
   );
 }
