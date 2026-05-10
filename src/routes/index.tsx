@@ -9,12 +9,17 @@ import { Activity, Upload, Sparkles, ShieldCheck, AlertTriangle } from "lucide-r
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Narimane DiagnosticPneumo — Détection de pneumonie sur radiographie thoracique" },
-      {
-        name: "description",
-        content:
-          "Application IA de diagnostic pneumologique - Importez une radiographie thoracique et obtenez une analyse (Normal / Pneumonie) avec score de confiance. Outil d'aide au diagnostic.",
-      },
+            {
+    title: "Narimane DiagnosticPneumo — Détection de pneumonie sur radiographie thoracique",
+  },
+  {
+    name: "description",
+    content: "Application de diagnostic pneumologique basé sur IA pour détecter la pneumonie sur radiographie thoracique",
+  },
+  {
+    name: "google-site-verification",
+    content: "_4mssdWLltNkDLAPurbUxq3DmgyZIhqlwsQCqMJ0Erw",
+  },
       { name: "keywords", content: "pneumonie, radiographie thoracique, x-ray, détection pneumonie, imagerie médicale, diagnostic pulmonaire" },
       { property: "og:title", content: "Narimane DiagnosticPneumo — Détection de pneumonie sur radiographie" },
       { property: "og:description", content: "Analyse de radiographie thoracique avec score de confiance." },
