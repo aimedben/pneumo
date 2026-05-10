@@ -9,17 +9,17 @@ import { Activity, Upload, Sparkles, ShieldCheck, AlertTriangle } from "lucide-r
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PneumoScan — Détection de pneumonie sur radiographie thoracique" },
+      { title: "Narimane DiagnosticPneumo — Détection de pneumonie sur radiographie thoracique" },
       {
         name: "description",
         content:
-          "Importez une radiographie thoracique et obtenez une analyse (Normal / Pneumonie) avec score de confiance. Outil d'aide au diagnostic.",
+          "Application IA de diagnostic pneumologique - Importez une radiographie thoracique et obtenez une analyse (Normal / Pneumonie) avec score de confiance. Outil d'aide au diagnostic.",
       },
       { name: "keywords", content: "pneumonie, radiographie thoracique, x-ray, détection pneumonie, imagerie médicale, diagnostic pulmonaire" },
-      { property: "og:title", content: "PneumoScan — Détection de pneumonie sur radiographie" },
+      { property: "og:title", content: "Narimane DiagnosticPneumo — Détection de pneumonie sur radiographie" },
       { property: "og:description", content: "Analyse de radiographie thoracique avec score de confiance." },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "PneumoScan — Détection de pneumonie" },
+      { name: "twitter:title", content: "Narimane DiagnosticPneumo — Détection de pneumonie" },
       { name: "twitter:description", content: "Analyse de radiographie thoracique avec score de confiance." },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
-          name: "PneumoScan",
+          name: "Narimane DiagnosticPneumo",
           description:
             "Outil d'aide au diagnostic permettant l'analyse de radiographies thoraciques pour la détection de la pneumonie.",
           inLanguage: "fr",
