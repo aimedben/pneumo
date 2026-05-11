@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pneumonie.aimadben2004.workers.dev/sitemap.xml
