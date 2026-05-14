@@ -8,8 +8,7 @@ import { Activity, Upload, Sparkles, AlertTriangle } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    // REMPLACEZ 'https://votre-site.com' par votre nom de domaine réel et absolu
-    links: [{ rel: "canonical", href: "https://votre-site.com" }],
+    links: [{ rel: "canonical", href: "https://pneumonie.aimadben2004.workers.dev/" }],
     meta: [
       {
         title: "Détection de Pneumonie par IA : Diagnostic Radiographique | Narimane Amsseli",
@@ -121,7 +120,6 @@ function Index() {
               <Activity className="w-5 h-5 text-primary" />
             </div>
             <div>
-              {/* Le nom de la marque reste ici mais n'est plus la seule balise h1 principale du site */}
               <span className="text-xl font-bold tracking-tight text-glow block">Narimane DiagnosticPneumo</span>
               <p className="text-xs text-muted-foreground">Medical Imaging</p>
             </div>
@@ -139,7 +137,6 @@ function Index() {
               <div className="inline-flex items-center gap-2 text-xs text-primary glass px-3 py-1 rounded-full mb-4">
                 <Sparkles className="w-3 h-3" /> Aperçu d'analyse diagnostique
               </div>
-              {/* CORRECTION SEO : Utilisation de mots-clés riches directement dans le H1 principal */}
               <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
                 Détection de la <span className="text-primary text-glow">pneumonie</span> par radiographie thoracique
               </h1>
@@ -201,14 +198,13 @@ function Index() {
             </div>
           </div>
 
-          {/* RIGHT: Visual / Component area */}
+          {/* RIGHT: Correction TypeScript — Seul l'attribut pris en charge est passé */}
           <div className="flex items-center justify-center min-h-[400px] glass rounded-3xl p-6 relative">
             <Lung3D status={status} />
           </div>
         </section>
       </div>
 
-      {/* FOOTER : Clause de non-responsabilité médicale (Crucial pour la validation SEO Google YMYL) */}
       <footer className="w-full border-t border-white/10 bg-background/50 backdrop-blur-md mt-auto">
         <div className="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center gap-4 text-xs text-muted-foreground justify-between">
           <div className="flex items-start gap-2.5 max-w-2xl">
